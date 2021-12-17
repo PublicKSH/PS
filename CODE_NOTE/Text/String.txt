@@ -1,0 +1,3 @@
+1. 입력
+<string>의 string은 scanf()로는 입력이 안되고 cin만 사용가능하다.
+굳이 scanf()를 사용해야하면 char* temp를 만든뒤 scanf()로 입력을 받고 temp로 string의 생성자를 이용해야한다.

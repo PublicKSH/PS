@@ -31,5 +31,9 @@
 *.out
 *.app
 
-# gitignore
-.gitignore
+# json
+.json
+
+# TEST folder
+TEST_PY/
+TEST_CPP/

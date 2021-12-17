@@ -1,0 +1,4 @@
+#include <numeric>
+accumulate(v.begin(),v.end(),0);
+이때 v의 반환형에 따라 0, 0.0 등으로 나뉜다.
+accumulate함수는 첫 2개의 인수 범위 값들을 더하며, 세번째 인수로 주어진 값을 합하는 과정을 시작한다.
