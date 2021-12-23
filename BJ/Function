@@ -1,0 +1,7 @@
+<vector>
+v.erase(a,b) a 부터 b 인덱스까지 지움
+v.unique(a,b) a 부터 b 인덱스까지 중복되는 원소를 뒤로 보냄(삭제 아님) 그리고 뒤로보낸원소의 주소값반환
+
+<algoritm> 
+lower_bound(begin,end,element)
+
