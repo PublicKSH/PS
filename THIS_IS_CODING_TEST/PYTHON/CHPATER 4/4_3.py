@@ -5,8 +5,6 @@ column = int(ord(inputData[0])) - int(ord('a')) + 1
 print("row",row)
 print("column",column)
 
-# ord() 함수 습득
-
 steps = [(-2, -1), (-2, 1), (-1, 2), (-1, -2), (1, 2), (1, -2), (2, 1), (2, -1)]
 
 count = 0
