@@ -1,31 +1,19 @@
 n = int(input())
-listA = [0] * 501
+setList = []
 # listB = [0] * 501
+d = [1] * 501
 for i in range(n):
     x, y = map(int, input().split())
-    listA[x] = y
+    setList.append((x,y))
     # listB[y] = x
 
-print(listA)
+def setting(data):
+    return data[0]
 
-## listA 의 값이 증가하기만 하면 된다.
+setList = sorted(setList, key=setting)
+for i in range(len(setList)):
+    for j in range(i):
+        if setList[j][1] < setList[i][1]:
+            d[i] = max(d[i], d[j] + 1)
 
-# 겹치는게 생긴다 -> 두개중 하나를 자르면 생기는 리스트 따로 생성?
-# 아니면 겹치는 값을 계속 증가시켜? 
-
-# 남아있는 값이 큰걸로?
-# 큐를 써서 빼는 방식으로?
-# 예제
-# 8
-# 1 8
-# 3 9
-# 2 2
-# 4 1
-# 6 4
-# 10 10
-# 9 7
-# 7 6
-# listA[1] 를 살린다 = list[3, 10] 을 살린다 => 3개를 살림
-# listA[2] 를 살린다 = list[6, 7, 9, 10] 을 살린다 => 5 개를 살림
-# listA[3] 을 살린다 = list[1, 10] 을 살린다 => 3개를 살림
-# listA[4] 를 살린다 = list[6, 7, 9, 10] 을 살린다 => 5 개를 살림
+print(n - max(d))
