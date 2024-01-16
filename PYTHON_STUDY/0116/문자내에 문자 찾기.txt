@@ -1,0 +1,3 @@
+stringA, stringB
+1. stringA in stringB
+1. stringA.find(stringB) = 없는경우 -1
