@@ -1,0 +1,9 @@
+def GCD(x,y):
+    newY = y
+    newX = x
+    while(newY):
+        newX,newY = newY,newY%newX
+    return x
+def LCM(x,y):
+    result = (x*y//GCD(x,y))
+    return result
