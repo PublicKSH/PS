@@ -1,4 +1,4 @@
-# todo: 다시 풀기
+# ugly: 다시 풀기
 import sys
 import heapq
 
