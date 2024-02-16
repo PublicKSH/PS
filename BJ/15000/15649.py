@@ -1,6 +1,6 @@
 # 1. dfs
 n, m = map(int, input().split())
-arr = [0] * (n + 1)
+arr = []
 visited = [False] * (n + 1)
 def dfs(count):
     if count == m:
@@ -11,8 +11,9 @@ def dfs(count):
         for i in range(1, n+1):
             if not visited[i] :
                 visited[i] = True
-                arr[count] = i
+                arr.append(i)
                 dfs(count+1)
+                arr.pop()
                 visited[i] = False
 
 dfs(0)

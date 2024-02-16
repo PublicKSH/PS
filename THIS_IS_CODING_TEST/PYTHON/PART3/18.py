@@ -12,7 +12,7 @@ def balance_string(str):
             numRightBracket+= 1
         if numLeftBracket == numRightBracket:
             index = i
-            break;
+            break
     return index+1
 
 def correct_string(str):
