@@ -1,0 +1,13 @@
+stable_sort가 필요할때
+1. 라이브러리의 stable_sort를 그대로 사용한다.
+	이때 vector<pair<int,int> >를 사용하면 좋다.
+2. struct에 추가적으로 int join등 들어온 순서를 알 수 있는 멤버변수를 넣어서 비교해야한다. 
+ex) 10814
+bool compare(const Member& m1, const Member& m2) {
+	if(m1.number < m2.number)
+		return true;
+	else if (m1.number == m2.number)
+		return m1.join < m2.join;
+	else
+		return false;
+}

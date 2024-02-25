@@ -1,0 +1,18 @@
+1.
+----------------------------
+ios::sync_with_stdio(false);
+cin.tie(NULL);
+cout.tie(NULL);
+----------------------------
+위의 코드를 추가하면 C++에서 빠른 입출력이 가능한다.
+하지만 c와 c++의 입출력을 혼용하지 않아야 하며, thread 사용에 주의 하여한다.
+
+2. 
+cin, cout보다 printf(), scanf()가 더 빠르다. 따라서 많은 입력 및 출력을 요구하는 문제에서는 printf(), scanf()를 사용해 주도록하자.
+
+3. 
+std::endl 보다는 "\n"이 빠르다.
+
+4.
+python의 경우 sys.stdin.readline을 사용해 주도록 하자.
+
