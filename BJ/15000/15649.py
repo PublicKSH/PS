@@ -1,4 +1,4 @@
-# 1. dfs
+# 순열
 n, m = map(int, input().split())
 arr = []
 visited = [False] * (n + 1)

@@ -1,4 +1,4 @@
-# 1. dfs
+# 1. 중복 순열
 n, m = map(int, input().split())
 arr = [0] * (n + 1)
 def dfs(count):

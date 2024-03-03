@@ -1,4 +1,3 @@
-# todo: 다시 풀고 정리하기 (dfs를 활용한 순열,조합)
 # 1. dfs
 n, m = map(int, input().split())
 arr = [i for i in range(1, n+1)]
