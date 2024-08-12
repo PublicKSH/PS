@@ -19,6 +19,7 @@ def dfs(depth):
     temp = 0    
     for i in range(n):
         if (temp != arr[i]):
+            # 첫 depth가 아니면 이전에 들어온 값이랑 비교해서 큰 값만 넣기
             if (depth >=1 and result[depth-1] <= arr[i]):
                 temp = arr[i]
                 result[depth] = arr[i]
