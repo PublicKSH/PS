@@ -14,6 +14,8 @@ def dfs(depth):
         print()
         return
     
+    # 이 temp 변수가 핵심이다. 
+    # temp 변수는 depth 마다 다르게 관리되기 때문에 잘써야한다.
     temp = 0 
     for i in range(n):
         if visited[i] == False and temp != arr[i]:
