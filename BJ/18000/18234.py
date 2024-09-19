@@ -48,5 +48,4 @@ for i in range(T-1,T-N-1,-1):
     result += sortedList[k][0] + sortedList[k][1] * i
     k += 1
 
-
 print(result)
