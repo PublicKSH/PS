@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 T = int(input())
-# dp[0][n] => 첫번째 줄에 n 번째 스티커까지 경우의 수가 흘렀을 때의 최대값
+# dp[0][n] => 1,2 열까지는 직접 계산 해주고 이후에는 건너 뛰는 경우를 고려한 DP로 계산
 for i in range(T):
     n = int(input())
     sticker =[[] for _ in range(2)]
